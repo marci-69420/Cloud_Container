@@ -1,0 +1,36 @@
+.public-view-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: stretch;
+}
+
+.public-view-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.public-view-container h1 {
+    margin-bottom: 20px;
+}
+
+#editorjs-readonly {
+    text-align: left;
+    margin: 20px auto;
+}
+
+.readonly-note {
+    margin-top: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+}

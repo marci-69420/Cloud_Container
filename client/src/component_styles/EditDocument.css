@@ -1,0 +1,31 @@
+.shareable-link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.shareable-link-container h3 {
+    margin: 0;
+}
+
+.shareable-link-text {
+    word-break: break-all;
+}
+
+#copy-link-btn {
+    cursor: pointer;
+}
+
+.EditorJS-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+form button[type="submit"] {
+    margin-top: 10px;
+}

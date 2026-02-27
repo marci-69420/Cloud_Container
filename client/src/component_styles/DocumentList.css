@@ -1,0 +1,66 @@
+.document-section {
+    padding-top: 55px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.document-section > div {
+    width: 100%;
+}
+
+.document-section ul,
+.document-section form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.document-section form #editorjs {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.document-section form #editorjs * {
+    max-width: 100%;
+}
+
+.document-section form input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+.search-input input,
+.search-input label {
+    color: #646cff !important;
+}
+
+.search-input .MuiFilledInput-root {
+    background-color: rgba(100, 108, 255, 0.1);
+}
+
+.search-input .MuiFilledInput-root:hover {
+    background-color: rgba(100, 108, 255, 0.15);
+}
+
+.search-input .MuiFilledInput-underline:before,
+.search-input .MuiFilledInput-underline:after {
+    border-bottom-color: #646cff !important;
+}
+
+.documents-list {
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .document-section ul,
+    .document-section form {
+        width: 95%;
+    }
+}

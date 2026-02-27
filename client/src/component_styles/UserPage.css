@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    background-color: #1a1a1a;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #646cff;
+    margin-right: auto;
+    margin-left: 20px
+}
+
+button {
+    color: #646cff;
+}
+
+.language-menu {
+    padding-right: 20px;
+    color: #646cff;
+}
+#basic-button {
+  color: #646cff;
+  text-transform: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+#basic-menu .MuiPaper-root {
+  background-color: #2a2a2a;
+}
+#basic-menu .MuiMenuItem-root:hover {
+  background-color: #363636;
+  color: #646cff;
+}
+
+.user-page-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.logout-button {
+    text-align: center;
+}
+
+/* Grid container styling */
+.MuiGrid-container {
+    min-height: calc(100vh - 100px);
+}
+
+.MuiGrid-item {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #646cff;
+    font-size: 0.9em;
+    background-color: #1a1a1a;
+}

@@ -1,0 +1,19 @@
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 300px;
+}
+
+.profile-section .logout-button {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 150px;
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
