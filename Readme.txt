@@ -8,12 +8,6 @@ After registering, users can upload a profile picture to make their profile more
 To collaborate, users can share documents directly with other registered users or generate a read-only link for non-authenticated users.
 The user friendly clean UI is translated into three languages: English, Finnish, and Hungarian.
 
-## AI Declaration
- - Copilot was used to correct and understand TypeScript and React syntax, generate architecture ideas on the frontend, 
-    bug fixing, and implement advanced, complicated features like PDF formatting or profile picture conversion. The Copilot implementations are marked in the code.
- - Genini was used to get UI design ideas, and it helped to implement Material UI components.
-
-
 ## Setup & Installation
 
 ### Prerequisites
