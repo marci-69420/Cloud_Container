@@ -6,6 +6,22 @@ import {useTranslation} from 'react-i18next';
 import '../component_styles/Login.css';
 import TextField from '@mui/material/TextField';
 
+const getAuthErrorMessage = (err: any) => {
+  const responseData = err?.response?.data
+
+  if (Array.isArray(responseData?.errors) && responseData.errors.length > 0) {
+    return responseData.errors[0]?.msg || 'Login failed'
+  }
+
+  return (
+    responseData?.message ||
+    responseData?.error ||
+    responseData?.email ||
+    err?.message ||
+    'Login failed'
+  )
+}
+
 // This file contains the Login component which allows users to log in to their account. 
 // It uses the useAuth hook to access the login function from the AuthContext and handles form submission to authenticate the user. 
 const Login: React.FC = () => {
@@ -23,7 +39,7 @@ const Login: React.FC = () => {
       await login(email, password)
       navigate('/profile')
     } catch (err: any) {
-      setError(err.response?.data?.message || 'Login failed')
+      setError(getAuthErrorMessage(err))
     }
   }
 

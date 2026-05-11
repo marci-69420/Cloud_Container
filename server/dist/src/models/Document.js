@@ -35,7 +35,7 @@ var __importStar = (this && this.__importStar) || (function () {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DocumentModel = void 0;
 const mongoose_1 = __importStar(require("mongoose"));
-//NOTE: The content is stored in a stringified Jaonn format to be compatible with normal string content and more advanced content created with EditorJS.
+//NOTE: The content is stored in a stringified Json format to be compatible with normal string content and more advanced content created with EditorJS.
 const DocumentSchema = new mongoose_1.Schema({
     title: { type: String, required: true },
     content: { type: String, required: true },

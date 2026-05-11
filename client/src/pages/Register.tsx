@@ -8,6 +8,22 @@ import { useTranslation } from 'react-i18next';
     
 // This file contains the Register page which allows users to create a new account.
 
+const getAuthErrorMessage = (err: any, fallback: string) => {
+  const responseData = err?.response?.data
+
+  if (Array.isArray(responseData?.errors) && responseData.errors.length > 0) {
+    return responseData.errors[0]?.msg || fallback
+  }
+
+  return (
+    responseData?.message ||
+    responseData?.error ||
+    responseData?.email ||
+    err?.message ||
+    fallback
+  )
+}
+
 const Register: React.FC = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
@@ -24,7 +40,7 @@ const Register: React.FC = () => {
       await register(email, password, username)
       navigate('/profile')
     } catch (err: any) {
-      setError(err.response?.data?.message || t("Registration failed"))
+      setError(getAuthErrorMessage(err, t("Registration failed")))
     }
   }
 
