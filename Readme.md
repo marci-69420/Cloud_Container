@@ -67,36 +67,25 @@ Backend Dev Dependencies:
 
 ### File Structure
 
+```plaintext
 Cloud_Container/
-├── client/              # Frontend React application
+├── client/                  # Frontend React application
 │   ├── public/
-│   │   └── locales/    # Translation files (en, fi, hu)
+│   │   └── locales/         # Translation files (en, fi, hu)
 │   ├── src/
-│   │   ├── components/ # Reusable React components
-│   │   ├── pages/      # Page-level components
-│   │   ├── context/    # React Context providers
-│   │   └── component_styles/ # CSS modules
+│   │   ├── components/      # Reusable React components
+│   │   ├── pages/           # Page-level components
+│   │   ├── context/         # React Context providers
+│   │   └── component_styles/# CSS modules
 │   └── package.json
 │
-├── server/              # Backend Express application
+├── server/                  # Backend Express application
 │   ├── src/
-│   │   ├── models/     # Mongoose schemas
-│   │   ├── routes/     # API route handlers
-│   │   ├── middlewares/# Authentication middleware
-│   │   └── validators/ # Input validation rules
+│   │   ├── models/          # Mongoose schemas
+│   │   ├── routes/          # API route handlers
+│   │   ├── middlewares/     # Authentication middleware
+│   │   └── validators/      # Input validation rules
 │   └── package.json
 │
-└── package.json         # Root workspace configuration
+└── package.json             # Root workspace configuration
 ```
-
-## Implemented features
- - Mandatory Requirements - 25 points
- - Utilization of a frontside framework, I usedReact - 3 points
- - The document editor includes wysiwyg editor of some sort, EditorJS - 2 points
- - Document can be download as PDF - 3 points
- - The drive shows besides the name of the document also the creation and last updated timestamp
-   (it shows the creation initially, then it displays the last updated date if the document is updated) - 1 points
- - Users are able to select a profile picture for themselves, the image is stored in the server  - 2 points
- - Translation of the whole UI in two or more languages - 2 points
- - Add search functionality of some sort - 2 points
- Total estimated points: 40
